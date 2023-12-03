@@ -6,13 +6,193 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView_movieposter"
+        android:layout_width="376dp"
+        android:layout_height="214dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_to_the_future_1200x600_nytg" />
+
+    <ImageView
+        android:id="@+id/imageView_moviedvd"
+        android:layout_width="115dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_noviename"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/textview_noviename"
+        app:srcCompat="@drawable/back_to_the_future" />
+
+    <ImageView
+        android:id="@+id/imageView_status1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_statu2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_moviedvd"
+        app:srcCompat="@drawable/button1" />
+
+    <ImageView
+        android:id="@+id/imageView_statu2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_status3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status1"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/button2" />
+
+    <ImageView
+        android:id="@+id/imageView_status3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_status4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_statu2"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/button3__1_" />
+
+    <ImageView
+        android:id="@+id/imageView_status4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status3"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status1"
+        app:srcCompat="@drawable/button4" />
+
     <TextView
+        android:id="@+id/textView_status1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="4dp"
+        android:text="abc1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status1"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status1" />
+
+    <TextView
+        android:id="@+id/textView_status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_statu2"
+        app:layout_constraintStart_toStartOf="@+id/imageView_statu2"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <TextView
+        android:id="@+id/textView_statu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="abc3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status3"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status3" />
+
+    <TextView
+        android:id="@+id/textView_status4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="abc4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status4"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status4" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_status1" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="plot summary"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textview_plotsummery"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="dfuidsfuhdfuhi jidfhisdfioh iohidfi ihjod ihujodfiuhu duofd iuh dsfouihdsufoihoiuyh dsfouih dsfuih fdspuihdfsiuohfduhifd"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/textView_plotsummary"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_movieposter"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/textview_starrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10.0"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintGuide_begin="316dp" />
+
+    <TextView
+        android:id="@+id/textView_plotsummary"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="my name is barry allen and im the fastest man alive"
+        app:layout_constraintStart_toStartOf="@+id/textview_noviename"
+        app:layout_constraintTop_toBottomOf="@+id/textview_noviename" />
+
+    <TextView
+        android:id="@+id/textview_noviename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="back to the futurre"
+        app:layout_constraintStart_toEndOf="@+id/imageView_moviedvd"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_movieposter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
